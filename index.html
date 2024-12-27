@@ -144,9 +144,6 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form action="https://api.web3forms.com/submit" method="POST">
-                            <div>
-                            <input type="hidden" name="access_key" value="b39b03bd-b014-49a0-ac5b-4b658ffee262E">
-                                </div>
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name..." data-sb-validations="required" />
@@ -190,6 +187,7 @@
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Kirim</button>
+                            <input type="hidden" name="access_key" value="b39b03bd-b014-49a0-ac5b-4b658ffee262E">
                         </form>
                     </div>
                 </div>
