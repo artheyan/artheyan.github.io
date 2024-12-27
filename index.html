@@ -144,15 +144,16 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="b39b03bd-b014-49a0-ac5b-4b658ffee262E">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name..." data-sb-validations="required" />
+                                <input type="text" name="name" placeholder="Enter your name..."required>
                                 <label for="name">Nama Lengkap</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">Silahkan diisi dengan nama anda.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <input type="email" name="email" placeholder="name@example.com"required>
                                 <label for="email">E-mail</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
@@ -165,7 +166,7 @@
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" name="msg" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea name="message" required></textarea>
                                 <label for="message">Pesan Anda</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
@@ -186,8 +187,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Kirim</button>
-                            <input type="hidden" name="access_key" value="b39b03bd-b014-49a0-ac5b-4b658ffee262E">
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Kirim</button>         
                         </form>
                     </div>
                 </div>
