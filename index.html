@@ -144,6 +144,7 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         <form action="https://api.web3forms.com/submit" method="POST">
+                            <form class="needs-validation"novalidate>
                             <input type="hidden" name="access_key" value="b39b03bd-b014-49a0-ac5b-4b658ffee262E">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
@@ -160,7 +161,8 @@
                                 <label for="message"class="form-label">Pesan</label>
                                 <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
                             </div>
-                           <button type="submit" class="btn btn-primary">Kirim</button>         
+                           <button type="submit" class="btn btn-primary">Kirim</button>
+                            </form>
                         </form>
                     </div>
                 </div>
